@@ -1,10 +1,10 @@
 {
-  'vision': {
-    'name': 'DemoVision',
-    'url': 'https://github.com/TestBotHub/DemoVision'
+  "vision": {
+    "name": "DemoVision",
+    "url": "https://github.com/TestBotHub/DemoVision"
   },
-  'think': {
-    'name': 'DemoThink',
-    'url': 'https://github.com/TestBotHub/DemoThink'
+  "think": {
+    "name": "DemoThink",
+    "url": "https://github.com/TestBotHub/DemoThink"
   }
 }
