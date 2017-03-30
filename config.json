@@ -6,5 +6,10 @@
   "think": {
     "name": "DemoThink",
     "url": "https://github.com/TestBotHub/DemoThink"
+  },
+  "script": {
+    "install": "./gradlew installDebug && adb shell am start -n com.hashmup.demoapp/.MainActivity",
+    "vision": "",
+    "think": ""
   }
 }
