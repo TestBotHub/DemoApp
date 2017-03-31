@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.Arrays;
@@ -60,10 +61,17 @@ public class MainActivity extends AppCompatActivity {
         long tDelta = tEnd - tStart;
         double elapsedSeconds = tDelta / 1000.0;
         tv.setText(Double.toString(elapsedSeconds));
+        final LinearLayout layout = (LinearLayout)findViewById(R.id.layout);
+        if (elapsedSeconds > 5.0) {
+            layout.setBackgroundColor(Color.RED);
+        } else {
+            layout.setBackgroundColor(Color.BLUE);
+        }
         btn.setVisibility(View.VISIBLE);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                layout.setBackgroundColor(Color.WHITE);
                 tv.setText("");
                 setButton();
                 cur = 0;
